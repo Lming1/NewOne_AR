@@ -7,9 +7,13 @@ public class rayTracer : MonoBehaviour {
 	private List<GameObject> touchList = new List<GameObject> ();
 	private GameObject[] touchPrev;
 	private RaycastHit hit;
+
+
+
 	// Use this for initialization
 	void Start () {
 		
+
 	}
 	
 	// Update is called once per frame
