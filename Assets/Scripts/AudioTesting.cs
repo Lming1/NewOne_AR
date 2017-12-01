@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class AudioTesting : MonoBehaviour {
-
+	// Get Device Audio
+	// loudness modify
 	public float sensitivity = 100;
 	public float loudness = 0;
 	private AudioSource _audio;
