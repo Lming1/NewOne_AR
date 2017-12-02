@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
-    <ImageTarget name="imagelast" size="400.000000 249.743591" />
-    <ImageTarget name="aaa" size="400.000000 249.743591" />
+    <ImageTarget name="makeup" size="500.000000 386.230469" />
   </Tracking>
 </QCARConfig>
