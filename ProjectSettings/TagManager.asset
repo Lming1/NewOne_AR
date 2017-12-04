@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - User
+  - m_tool
+  - m_face
+  - m_all
+  - lip
   layers:
   - Default
   - TransparentFX

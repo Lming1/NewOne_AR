@@ -5,6 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/test.unity
     guid: f598a1c75912e4f5b880655d9991f43d
+  - enabled: 1
+    path: Assets/VRHair.unity
+    guid: fddbb6738f49e4bf3a04b005091c304d
