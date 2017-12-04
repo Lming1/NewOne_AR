@@ -21,28 +21,24 @@ public class interaction : MonoBehaviour {
 		mat.renderQueue = 3000;
 
 		defaultColor = new Color32 (255, 255, 255, 255);
-		selectedColor = new Color32 (0, 0, 0, 0);
+		selectedColor = new Color32 (255, 0, 0, 255);
 
 		mat.color = defaultColor;
 	}
 
 	void touchBegan(){
 		mat.color = selectedColor;
-		Debug.Log ("selected");
 	}
 
 	void touchEnded(){
 		mat.color = defaultColor;
-		Debug.Log ("end");
 	}
 
 	void touchStay(){
 		mat.color = selectedColor;
-		Debug.Log ("stay");
 	}
 
 	void touchExit(){
 		mat.color = defaultColor;
-		Debug.Log ("end");
 	}
 }

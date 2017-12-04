@@ -186,8 +186,8 @@ GameObject:
   m_Component:
   - component: {fileID: 508252785}
   - component: {fileID: 508252784}
-  - component: {fileID: 508252786}
   - component: {fileID: 508252787}
+  - component: {fileID: 508252786}
   m_Layer: 0
   m_Name: Hair
   m_TagString: Untagged
@@ -263,17 +263,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8588cfd3ff8c44ff18d60101e2a65997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &508252787
-MonoBehaviour:
+--- !u!65 &508252787
+BoxCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 508252783}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2be163ed877d34ab3b0f6ffd769d676f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  serializedVersion: 2
+  m_Size: {x: 4.500001, y: 5.060002, z: 0.20000005}
+  m_Center: {x: -0.000000018626451, y: -0.00000047683716, z: -0.0000042915344}
 --- !u!1 &571691002
 GameObject:
   m_ObjectHideFlags: 0
@@ -1029,3 +1030,18 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1955483480 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
+  m_PrefabInternal: {fileID: 1955483479}
+--- !u!114 &1955483482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1955483480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2be163ed877d34ab3b0f6ffd769d676f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
