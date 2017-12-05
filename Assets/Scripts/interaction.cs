@@ -6,10 +6,20 @@ public class interaction : MonoBehaviour {
 	public static Color defaultColor;
 	public static Color selectedColor;
 	public static Material mat;
-	// Use this for initialization
-	void Start () {
-		
-		mat = GetComponent<Renderer> ().material;
+
+    public GameObject target;
+    
+    public int st_color = 1;
+    public int nd_color;
+    public Renderer rend;
+    public Material[] matA = new Material[19];
+    // Use this for initialization
+    void Start () {
+
+        rend = target.GetComponent<Renderer>();
+        rend.enabled = true;
+
+        mat = GetComponent<Renderer> ().material;
 
 		mat.SetFloat("_Mode", 2);
 		mat.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
@@ -23,15 +33,14 @@ public class interaction : MonoBehaviour {
 		defaultColor = new Color32 (255, 255, 255, 255);
 		selectedColor = new Color32 (255, 0, 0, 255);
 
-		mat.color = defaultColor;
+		//mat.color = defaultColor;
+
+
 	}
 
+    /*
 	void touchBegan(){
 		mat.color = selectedColor;
-	}
-
-	void touchEnded(){
-		mat.color = defaultColor;
 	}
 
 	void touchStay(){
@@ -39,6 +48,22 @@ public class interaction : MonoBehaviour {
 	}
 
 	void touchExit(){
-		mat.color = defaultColor;
+		mat.color = selectedColor;
 	}
+    */
+
+    void touchEnded()
+    {
+        if (st_color <= nd_color)
+        {
+            rend.sharedMaterial = matA[st_color];
+            st_color++;
+        }
+        else
+        {
+            st_color = 1;
+            rend.sharedMaterial = matA[st_color];
+        }
+            
+    }
 }
